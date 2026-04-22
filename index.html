@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document encoding & responsive scaling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Inter font: preconnect speeds first paint; stylesheet loads weights 400–700 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- All layout, color, and typography tokens live here -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Dev/demo badge: fixed top-center (see .page-label in CSS) -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing row: duplicate this .card block to add another plan -->
     <div class="cards-container">
+
+        <!-- Plan: Hobby (free tier) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -38,6 +50,8 @@
             </div>
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Plan: Pro (paid tier, primary CTA styling) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -68,6 +82,38 @@
                 </div>
             </div>
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Plan: Enterprise (example of adding a third card — same markup pattern) -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO and advanced security
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated support and SLAs
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom usage and billing
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Org-wide admin and audit logs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="download-button secondary">Contact sales</button>
         </div>
     </div>
 </body>
