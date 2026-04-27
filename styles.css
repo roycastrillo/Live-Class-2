@@ -159,6 +159,19 @@ body {
     background-color: #333;
 }
 
+.download-button.tertiary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #D8D6CE;
+}
+
+.download-button.tertiary:hover {
+    background-color: #D8D6CE;
+}
+
+download-button.tertiary:active {
+    background-color: #333;
+}
 /* ---------------------------------------------------------------------------
    Top badge (matches .page-label in HTML)
    Fixed chip over the page — not part of the pricing component itself.
